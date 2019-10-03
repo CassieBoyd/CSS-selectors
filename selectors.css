@@ -1,0 +1,63 @@
+/* Target header to add border. */
+#header {
+  border: 1px solid goldenrod;
+}  
+
+/* Target list items in header to remove bullets, make horizontal and add spacing. */
+header ul li {
+  list-style: none; 
+  padding-left: 25px;
+  display: inline;
+}
+
+/* Target disabled class to be gray. */
+.disabled {
+  color: gray;
+}
+
+/* Target disabled class that is an attribute of an anchor tag to be purple. */
+a.disabled {
+  color: purple;
+}
+
+/* Target active class to be yellow. */
+.active {
+  color: yellow;
+}
+
+/* Target "I'm red" text to be red. */
+article section .parent div div {
+  color: red;
+}
+
+/* Target "I'm blue" text to be blue. */
+article section .parent div div ~ div {
+  color: blue;
+}
+
+/* Target sibling h4 of "I'm red" to have red background. */
+article section .parent div div ~ h4 {
+  background-color: red;
+}
+
+/* Target sibling h4 of "I'm blue" to have blue background. */
+article section .parent div div ~ div ~ h4 {
+  background-color: blue;
+}
+
+/* Target h4 that is a direct child of .grandparent to have 1px border w/ rounded corners */
+article section .grandparent > h4 {
+  border: 1px solid black; 
+  border-radius: 15px;
+}
+
+/* Target .promo to have bold gold text. */
+.promo {
+  color: gold;
+  font-weight: bold;
+}
+
+/* CSS selector that makes any text input field have a height of 25px */
+input {
+  height: 25px;
+}
